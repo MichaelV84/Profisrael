@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ProfIsrael</string>
+    <string name="enter">Вход</string>
+    <string name="item_1">На главную</string>
+    <string name="item_2">Наши контакты</string>
+    <string name="item_3">Instagram</string>
+    <string name="Find_the_best_profi">Найти лучшего профи</string>
+    <string name="find_city">ВЫБРАТЬ ГОРОД</string>
+    <string name="online_services">ONLINE УСЛУГИ</string>
+</resources>
