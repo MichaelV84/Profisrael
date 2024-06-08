@@ -10,6 +10,6 @@
     <color name="background">#5CCCCC</color>
     <color name="logo_color">#FE5631</color>
     <color name="gray">#F5F4F8</color>
-
+    <color name="grayText">#7D768D</color>
 
 </resources>
