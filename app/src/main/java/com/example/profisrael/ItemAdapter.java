@@ -19,9 +19,10 @@ import java.util.List;
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder> {
 
     private List<DataModel> mList;
-    private List<String> list;
     private Context mContext;
-    public  ItemAdapter(List<DataModel> mList,Context context){
+    private int expandedPosition = -1;
+
+    public  ItemAdapter(List<DataModel> mList, Context context){
         this.mList = mList;
         this.mContext = context;
     }
@@ -29,7 +30,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
     @NonNull
     @Override
     public ItemViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.each_item,parent , false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.each_item, parent, false);
         return new ItemViewHolder(view);
     }
 
@@ -37,23 +38,19 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
     public void onBindViewHolder(@NonNull ItemViewHolder holder, int position) {
         DataModel model = mList.get(position);
         holder.mTextView.setText(model.getItemText());
-
-        boolean isExpandable= model.isExpandable();
-
+        boolean isExpandable = position == expandedPosition;
 
         holder.expandableLayout.setVisibility(isExpandable ? View.VISIBLE : View.GONE);
 
-        if(isExpandable){
+        if (isExpandable) {
             holder.mTextView.setTextColor(ContextCompat.getColor(mContext, R.color.logo_color));
             holder.mArrowImage.setImageResource(R.drawable.ic_baseline_keyboard_arrow_up_24);
-        }
-        else{
+        } else {
             holder.mTextView.setTextColor(ContextCompat.getColor(mContext, R.color.black));
             holder.mArrowImage.setImageResource(R.drawable.ic_baseline_keyboard_arrow_down_24);
         }
 
-
-        NestedAdapter adapter = new NestedAdapter(list, mContext);
+        NestedAdapter adapter = new NestedAdapter(model.getNestedList(), mContext);
         holder.nestedRecyclerView.setLayoutManager(new LinearLayoutManager(holder.itemView.getContext()));
         holder.nestedRecyclerView.setHasFixedSize(true);
         holder.nestedRecyclerView.setAdapter(adapter);
@@ -61,13 +58,14 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
         holder.linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                model.setExpandable(!model.isExpandable());
-                list = model.getNestedList();
-                notifyItemChanged(holder.getLayoutPosition());
-
+                if (expandedPosition == position) {
+                    expandedPosition = -1;
+                } else {
+                    expandedPosition = position;
+                }
+                notifyDataSetChanged();
             }
         });
-
     }
 
     @Override
@@ -83,7 +81,6 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
         private ImageView mArrowImage;
         private RecyclerView nestedRecyclerView;
 
-
         public ItemViewHolder(@NonNull View itemView) {
             super(itemView);
             linearLayout = itemView.findViewById(R.id.linear_layout);
@@ -91,8 +88,6 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
             mTextView = itemView.findViewById(R.id.itemTv);
             mArrowImage = itemView.findViewById(R.id.arrow_image_view);
             nestedRecyclerView = itemView.findViewById(R.id.child_rv);
-
         }
     }
-
 }
