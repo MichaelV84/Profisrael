@@ -1,0 +1,242 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/up_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        >
+
+        <!-- Логотип -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20sp"
+            android:clickable="true"
+
+            android:onClick="logoClick"
+            android:src="@drawable/logo" />
+
+        <!-- Изображение для меню -->
+        <ImageView
+            android:id="@+id/menuPUP"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/menu"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <!--  Кнопка входа -->
+        <Button
+            android:layout_marginRight="20sp"
+            android:id="@+id/loginButton"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:textSize="12dp"
+            android:text="@string/enter"
+            android:drawableStart="@drawable/ic_baseline_login_16"
+            android:drawablePadding="-20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/rounded_button"
+
+            />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/up_menu"
+        android:background="@color/gray"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/rounded_edit"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            >
+
+            <!-- Текстовая надпись и кнопки -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/enter_for_masters"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="25dp"
+
+                >
+            </TextView>
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/login_lay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/rounded_edit"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="25dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/login_email"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"
+                    >
+
+                </TextView>
+                <EditText
+                    android:id="@+id/login_etext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edit"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:hint="@string/enter_mail"
+                    android:textColor="@color/grayText"
+                    android:textSize="16sp"
+                    android:drawablePadding="8dp"
+                    android:gravity="start|center_vertical"
+                    android:maxLines="1"
+                    android:cursorVisible="true"
+                    android:imeOptions="actionDone"
+                    android:layout_gravity="center_vertical"
+                    android:textAlignment="viewStart"
+                    android:layoutDirection="ltr"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="50"
+                    android:layout_marginBottom="20dp"
+                   />
+
+
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/password"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"
+                    >
+
+                </TextView>
+                <EditText
+                    android:id="@+id/pass_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edit"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:hint="@string/ent_pass"
+                    android:textColor="@color/grayText"
+                    android:textSize="16sp"
+                    android:drawablePadding="8dp"
+                    android:gravity="start|center_vertical"
+                    android:maxLines="1"
+                    android:cursorVisible="true"
+                    android:imeOptions="actionDone"
+                    android:layout_gravity="center_vertical"
+                    android:textAlignment="viewStart"
+                    android:layoutDirection="ltr"
+                    android:inputType="textPassword"
+                    android:maxLength="50"
+
+
+                    />
+
+                <Button
+                    android:id="@+id/log_in_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/rounded_button2"
+                    android:textColor="@color/white"
+                    android:text="@string/enter_btn"
+                    android:layout_marginTop="30dp"
+                    android:textSize="15dp">
+                </Button>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/reg_lay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/rounded_edit"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/reg_for_masters"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+
+                    >
+                </TextView>
+
+
+                <Button
+                    android:id="@+id/sing_in_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/rounded_button2"
+                    android:textColor="@color/white"
+                    android:text="@string/singin_btn"
+                    android:layout_marginTop="30dp"
+                    android:textSize="15dp">
+                </Button>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

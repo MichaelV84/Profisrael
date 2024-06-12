@@ -8,7 +8,21 @@
     <string name="find_city">ВЫБРАТЬ ГОРОД</string>
     <string name="online_services">ONLINE УСЛУГИ</string>
     <string name="about_us">О нашем портале</string>
-
+    <string name="our_contacts">Наши контакты</string>
+    <string name="write">Пишите</string>
+    <string name="whatsapp">WhatsApp чат</string>
+    <string name="mail">mail@profisrael.com</string>
+    <string name="tel_num">0539578359</string>
+    <string name="podpisivaites">Подписывайтесь</string>
+    <string name="enter_for_masters">Вход для мастеров</string>
+    <string name="login_email">Ваш логин (Email)</string>
+    <string name="instagram">\@profi.israel</string>
+    <string name="enter_mail">Введите ваш email</string>
+    <string name="password">Пароль</string>
+    <string name="ent_pass">Введите пароль</string>
+    <string name="enter_btn">Войти</string>
+    <string name="singin_btn">Регистрация</string>
+    <string name="reg_for_masters">Регистрация для мастеров</string>
     <string name="reklama_na_portale">Реклама на портале</string>
     <string name="reklama_na_portale1">В верхнем правом углу сайта кнопка «Регистрация», нажав на неё вы переходите к заполнению информации, которая будет отображаться в вашей анкете.
     Инстаграм мы берем только для продвижения в социальных сетях.
