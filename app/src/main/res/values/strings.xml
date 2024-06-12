@@ -24,6 +24,15 @@
     <string name="singin_btn">Регистрация</string>
     <string name="reg_for_masters">Регистрация для мастеров</string>
     <string name="reklama_na_portale">Реклама на портале</string>
+    <string name="master_reg">Регистрация мастера</string>
+    <string name="login_reg_text">Email:</string>
+    <string name="pass_reg_text">Password:</string>
+    <string name="enter_pass_reg_hint">Придумайте пароль, который запомните</string>
+
+
+
+
+
     <string name="reklama_na_portale1">В верхнем правом углу сайта кнопка «Регистрация», нажав на неё вы переходите к заполнению информации, которая будет отображаться в вашей анкете.
     Инстаграм мы берем только для продвижения в социальных сетях.
     Фото мастера обязательно, по статистике клиент выбирает мастера, который ему внешне близок.
