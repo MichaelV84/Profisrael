@@ -134,7 +134,8 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp">
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp">
 
                 <EditText
                     android:id="@+id/pass_reg"
@@ -171,9 +172,493 @@
                     android:layout_gravity="center_vertical"
                     android:src="@drawable/visib_icon" />
 
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/city_for_reg"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:layout_gravity="left"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                >
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinner_city"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_spinner"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="start|center_vertical"
+                android:spinnerMode="dropdown"
+                android:padding="8dp"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_for_reg"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:layout_gravity="left"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                >
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinner_category"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_spinner"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="start|center_vertical"
+                android:spinnerMode="dropdown"
+                android:padding="8dp"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/service_for_reg"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:layout_gravity="left"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                >
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinner_service"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_spinner"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="start|center_vertical"
+                android:spinnerMode="dropdown"
+                android:padding="8dp"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/tel_reg_text"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:layout_gravity="left"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                >
+
+            </TextView>
+            <EditText
+                android:id="@+id/tel_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edit"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="@string/enter_tel"
+                android:textColor="@color/grayText"
+                android:textSize="16sp"
+                android:drawablePadding="8dp"
+                android:gravity="start|center_vertical"
+                android:maxLines="1"
+                android:cursorVisible="true"
+                android:imeOptions="actionDone"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="viewStart"
+                android:layoutDirection="ltr"
+                android:inputType="number"
+                android:maxLength="50"
+                android:layout_marginBottom="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/whatsapp_reg_text"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:layout_gravity="left"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                >
+
+            </TextView>
+            <EditText
+                android:id="@+id/whatsapp_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edit"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="@string/enter_whatsapp"
+                android:textColor="@color/grayText"
+                android:textSize="16sp"
+                android:drawablePadding="8dp"
+                android:gravity="start|center_vertical"
+                android:maxLines="1"
+                android:cursorVisible="true"
+                android:imeOptions="actionDone"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="viewStart"
+                android:layoutDirection="ltr"
+                android:inputType="number"
+                android:maxLength="50"
+                android:layout_marginBottom="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/instagram_reg_text"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:layout_gravity="left"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                >
+
+            </TextView>
+            <EditText
+                android:id="@+id/instagram_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edit"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="@string/enter_instagram"
+                android:textColor="@color/grayText"
+                android:textSize="16sp"
+                android:drawablePadding="8dp"
+                android:gravity="start|center_vertical"
+                android:maxLines="1"
+                android:cursorVisible="true"
+                android:imeOptions="actionDone"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="viewStart"
+                android:layoutDirection="ltr"
+                android:inputType="text"
+                android:maxLength="50"
+                android:layout_marginBottom="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/name_of_your_service_reg_text"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:layout_gravity="left"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                >
+
+            </TextView>
+            <EditText
+                android:id="@+id/name_of_your_service_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edit"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="@string/enter_name_of_your_service"
+                android:textColor="@color/grayText"
+                android:textSize="16sp"
+                android:drawablePadding="8dp"
+                android:gravity="start|center_vertical"
+                android:maxLines="1"
+                android:cursorVisible="true"
+                android:imeOptions="actionDone"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="viewStart"
+                android:layoutDirection="ltr"
+                android:inputType="text"
+                android:maxLength="50"
+                android:layout_marginBottom="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/price_reg_text"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:layout_gravity="left"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                >
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp">
+
+                <EditText
+                    android:id="@+id/from_ils_reg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edit"
+                    android:hint="@string/from_ils_reg_hint"
+                    android:textColor="@color/grayText"
+                    android:textSize="16sp"
+                    android:maxLines="1"
+                    android:cursorVisible="true"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:layout_marginRight="5dp"
+
+                    />
+                <EditText
+                    android:id="@+id/to_ils_reg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edit"
+                    android:hint="@string/to_ils_reg_hint"
+                    android:textColor="@color/grayText"
+                    android:textSize="16sp"
+                    android:maxLines="1"
+                    android:cursorVisible="true"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:layout_marginLeft="5dp"
+
+                    />
+
 
 
             </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/address_reg_text"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:layout_gravity="left"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                >
+
+            </TextView>
+            <EditText
+                android:id="@+id/address_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edit"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="@string/address_service"
+                android:textColor="@color/grayText"
+                android:textSize="16sp"
+                android:drawablePadding="8dp"
+                android:gravity="start|center_vertical"
+                android:maxLines="1"
+                android:cursorVisible="true"
+                android:imeOptions="actionDone"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="viewStart"
+                android:layoutDirection="ltr"
+                android:inputType="text"
+                android:maxLength="50"
+                android:layout_marginBottom="20dp"
+                />
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/language_reg_text"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="10dp"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+
+                    >
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:checked="true"
+                    android:buttonTint="@color/checkbox_color"
+                    android:clickable="false"
+                    />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ru_reg_text"
+                        android:textColor="@color/gray_l"
+                        android:textSize="15dp"
+                        android:textStyle="normal"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+
+                    >
+                <CheckBox
+                    android:id="@+id/checkBox_heb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:checked="false"
+                    android:buttonTint="@color/checkbox_color"
+
+                    />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/heb_reg_text"
+                        android:textColor="@color/grayText"
+                        android:textSize="15dp"
+                        android:textStyle="normal"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+
+                    >
+                    <CheckBox
+                        android:id="@+id/checkBox_eng"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:checked="false"
+                        android:buttonTint="@color/checkbox_color"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/eng_reg_text"
+                        android:textColor="@color/grayText"
+                        android:textSize="15dp"
+                        android:textStyle="normal"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description_for_reg"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:layout_gravity="left"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                >
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/description_reg"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/rounded_edit"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="@string/description"
+                android:textColor="@color/grayText"
+                android:textSize="16sp"
+                android:drawablePadding="8dp"
+                android:gravity="start|top"
+                android:cursorVisible="true"
+                android:imeOptions="actionDone"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="viewStart"
+                android:layoutDirection="ltr"
+                android:inputType="textMultiLine"
+                android:maxLength="350"
+                android:layout_marginBottom="20dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+
+                />
+
 
         </LinearLayout>
 

@@ -11,6 +11,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 public class EnterActivity extends AppCompatActivity {
@@ -22,6 +23,38 @@ public class EnterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_enter);
+
+
+
+
+        EditText login_etextEditText = findViewById(R.id.login_etext);
+
+        login_etextEditText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus) {
+                    login_etextEditText.setBackgroundResource(R.drawable.rounded_edit_focused);
+                } else {
+                    login_etextEditText.setBackgroundResource(R.drawable.rounded_edit);
+                }
+            }
+        });
+
+        EditText pass_editEditText = findViewById(R.id.pass_edit);
+
+        pass_editEditText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus) {
+                    pass_editEditText.setBackgroundResource(R.drawable.rounded_edit_focused);
+                } else {
+                    pass_editEditText.setBackgroundResource(R.drawable.rounded_edit);
+                }
+            }
+        });
+
+
+
 
         reg_batton = findViewById(R.id.sing_in_btn);
         reg_batton.setOnClickListener(new View.OnClickListener() {
