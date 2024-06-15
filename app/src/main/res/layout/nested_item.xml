@@ -19,7 +19,7 @@
         android:background="@color/white"
         android:text="Какой то блять текст"
         android:textColor="@color/grayText"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:textStyle="normal" />
 
 </androidx.cardview.widget.CardView>

@@ -76,6 +76,8 @@
                 >
             </TextView>
 
+
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -111,6 +113,7 @@
                 android:inputType="textEmailAddress"
                 android:maxLength="50"
                 android:layout_marginBottom="20dp"
+
                 />
 
             <TextView
@@ -160,7 +163,8 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
-                     />
+                    android:buttonTint="@color/checkbox_color"
+                    />
                 <ImageView
                     android:id="@+id/pass_eye"
                     android:layout_width="20dp"
@@ -187,6 +191,8 @@
                 >
 
             </TextView>
+
+
 
             <Spinner
                 android:id="@+id/spinner_city"
@@ -297,7 +303,7 @@
                 android:textAlignment="viewStart"
                 android:layoutDirection="ltr"
                 android:inputType="number"
-                android:maxLength="50"
+                android:maxLength="10"
                 android:layout_marginBottom="20dp"
                 />
 

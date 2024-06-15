@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:layout_margin="0.5dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="8dp"
+    app:cardCornerRadius="0dp"
     android:minHeight="70dp"
     android:elevation="6dp"
     android:background="@color/gray"
@@ -32,12 +32,14 @@
                 android:gravity="center"
                 android:text="@string/reklama_na_portale"
                 android:textColor="@color/black"
-                android:textSize="18dp"
+                android:textSize="17dp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+
+                />
             <ImageView
                 android:id="@+id/arrow_image_view"
                 android:layout_width="30dp"
@@ -60,6 +62,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/child_rv"
+                android:background="@drawable/rounded_edit"
 
             />
 
