@@ -50,10 +50,16 @@
     <string name="eng_reg_text">En</string>
     <string name="description_for_reg">Описание:</string>
     <string name="description">Введите описание вашей услуги в это поле. Напишите список услуг, которые вы оказываете, можно с ценами, скидки, лучшее предложение, ваш опыт и преимущества. Анкеты без описания или с парой слов не вызывают доверия у клиентов.</string>
+    <string name="portret_reg_hint">Выберете файл</string>
+    <string name="portret2_reg_hint">Файл не выбран</string>
+    <string name="portret_photo_reg">Ваше фото (портрет):</string>
+    <string name="delete">Удалить выбор</string>
+    <string name="work_photo_reg">Фото ваших работ (выбирайте сразу все):</string>
+    <string name="photo_reg">Выберете файл</string>
+    <string name="photo2_reg">Файл не выбран</string>
+    <string name="accept_reg"> Я подтверждаю, что я молодец и ответственно подошел к заполнению своей анкеты и заполнил все поля!</string>
+    <string name="singin_reg">Разместить вашу рекламу</string>
 
-
-
-    focus_thief_items
 
     <string-array name="afocus_thief_items">
 

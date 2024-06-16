@@ -164,6 +164,7 @@
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
                     android:buttonTint="@color/checkbox_color"
+
                     />
                 <ImageView
                     android:id="@+id/pass_eye"
@@ -664,6 +665,190 @@
                 android:focusableInTouchMode="true"
 
                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/portret_photo_reg"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="normal">
+
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/portret_linearLayout_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/portret_reg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edit"
+                    android:cursorVisible="true"
+                    android:hint="@string/portret_reg_hint"
+                    android:inputType="textPassword"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:textColor="@color/grayText"
+                    android:textSize="16sp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/portret2_reg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edit"
+                    android:cursorVisible="true"
+                    android:hint="@string/portret2_reg_hint"
+                    android:inputType="textPassword"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:textColor="@color/grayText"
+                    android:textSize="16sp"
+
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/delete_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="start"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_button"
+                android:drawablePadding="-20dp"
+                android:gravity="center_vertical|start"
+                android:text="@string/delete"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/work_photo_reg"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="normal">
+
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/work_linearLayout_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/photo_reg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edit"
+                    android:cursorVisible="true"
+                    android:hint="@string/portret_reg_hint"
+                    android:inputType="textPassword"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:textColor="@color/grayText"
+                    android:textSize="16sp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/photo2_reg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edit"
+                    android:cursorVisible="true"
+                    android:hint="@string/portret2_reg_hint"
+                    android:inputType="textPassword"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:textColor="@color/grayText"
+                    android:textSize="16sp"
+
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/delete2_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="start"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_button"
+                android:drawablePadding="-20dp"
+                android:gravity="center_vertical|start"
+                android:text="@string/delete"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/applay_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBox_for_applay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/checkbox_color"
+                    android:checked="false"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/accept_reg"
+                    android:textColor="@color/grayText"
+                    android:textSize="15dp"
+                    android:textStyle="normal">
+
+                </TextView>/
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/sing_in_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_button2"
+                android:textColor="@color/white"
+                android:text="@string/singin_reg"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:layout_marginBottom="20dp"
+                android:textAllCaps="false">
+            </Button>
 
 
         </LinearLayout>
