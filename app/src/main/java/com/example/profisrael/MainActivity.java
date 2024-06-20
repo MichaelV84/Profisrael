@@ -29,6 +29,17 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    //recview
+        RecyclerView recyclerViewProfiles;
+//        DatabaseReference database;
+        AdapterForRecView adapterForRecView;
+        ArrayList<User> list;
+
+
+
+    //-------
+
+
     ImageView btnPupMenu;
     Button loginButton;
     private RecyclerView recyclerView;
@@ -43,6 +54,26 @@ public class MainActivity extends AppCompatActivity {
         Window w = getWindow();
         w.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
         setContentView(R.layout.activity_main);
+
+
+        //recview
+        recyclerViewProfiles = findViewById(R.id.from_db_recycle_view);
+//        database =
+        recyclerViewProfiles.setHasFixedSize(true);
+        recyclerViewProfiles.setLayoutManager(new LinearLayoutManager(this));
+        list = new ArrayList<>();
+        adapterForRecView = new AdapterForRecView(this, list);
+        recyclerViewProfiles.setAdapter(adapterForRecView);
+        list.add(new User("1111","11111","https://icons8.ru/icon/20324/contract-job"));
+        list.add(new User("2222","22222","https://icons8.ru/icon/20324/contract-job"));
+        list.add(new User("3333","33333","https://icons8.ru/icon/20324/contract-job"));
+        list.add(new User("4444","44444","https://icons8.ru/icon/20324/contract-job"));
+        list.add(new User("5555","55555","https://icons8.ru/icon/20324/contract-job"));
+        list.add(new User("6666","66666","https://icons8.ru/icon/20324/contract-job"));
+        list.add(new User("7777","77777","https://icons8.ru/icon/20324/contract-job"));
+
+
+        //-----
 
         btnPupMenu = findViewById(R.id.menuPUP);
         registerForContextMenu(btnPupMenu);
@@ -153,5 +184,6 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
     }
+
 
 }

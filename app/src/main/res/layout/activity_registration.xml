@@ -178,6 +178,47 @@
                     android:src="@drawable/visib_icon" />
 
             </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/name_reg_text"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:layout_gravity="left"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                >
+
+            </TextView>
+            <EditText
+                android:id="@+id/name_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edit"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="@string/enter_name"
+                android:textColor="@color/grayText"
+                android:textSize="16sp"
+                android:drawablePadding="8dp"
+                android:gravity="start|center_vertical"
+                android:maxLines="1"
+                android:cursorVisible="true"
+                android:imeOptions="actionDone"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="viewStart"
+                android:layoutDirection="ltr"
+                android:inputType="textEmailAddress"
+                android:maxLength="50"
+                android:layout_marginBottom="20dp"
+
+                />
+
+
+
+
 
             <TextView
                 android:layout_width="wrap_content"

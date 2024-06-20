@@ -24,7 +24,7 @@ import android.widget.Spinner;
 
 public class Registration extends AppCompatActivity {
 
-    private EditText login_reg_editText, pass_reg_editText, tel_reg_editText, whatsapp_reg_editText, instagram_reg_editText, name_of_your_service_reg_editText, from_ils_reg_editText, to_ils_reg_editText, address_reg_editText, description_reg_editText;
+    private EditText name_reg_editText,login_reg_editText, pass_reg_editText, tel_reg_editText, whatsapp_reg_editText, instagram_reg_editText, name_of_your_service_reg_editText, from_ils_reg_editText, to_ils_reg_editText, address_reg_editText, description_reg_editText;
     private Spinner spinner_city_spinner, spinner_category_spinner, spinner_service_spinner;
 
     ImageView btnPupMenu;
@@ -69,10 +69,12 @@ public class Registration extends AppCompatActivity {
         to_ils_reg_editText = findViewById(R.id.to_ils_reg);
         address_reg_editText = findViewById(R.id.address_reg);
         description_reg_editText = findViewById(R.id.description_reg);
-
+        name_reg_editText = findViewById(R.id.name_reg);
         // Set focus listeners for EditTexts
+
         setFocusListener(login_reg_editText);
         setFocusListener(pass_reg_editText);
+        setFocusListener(name_reg_editText);
         setFocusListener(tel_reg_editText);
         setFocusListener(whatsapp_reg_editText);
         setFocusListener(instagram_reg_editText);
@@ -226,6 +228,7 @@ public class Registration extends AppCompatActivity {
     private void removeHighlightFromOthers(View currentView) {
         if (currentView != login_reg_editText) removeHighlight(login_reg_editText);
         if (currentView != pass_reg_editText) removeHighlight(pass_reg_editText);
+        if (currentView != name_reg_editText) removeHighlight(name_reg_editText);
         if (currentView != tel_reg_editText) removeHighlight(tel_reg_editText);
         if (currentView != whatsapp_reg_editText) removeHighlight(whatsapp_reg_editText);
         if (currentView != instagram_reg_editText) removeHighlight(instagram_reg_editText);
@@ -237,5 +240,6 @@ public class Registration extends AppCompatActivity {
         if (currentView != spinner_city_spinner) removeHighlight(spinner_city_spinner);
         if (currentView != spinner_category_spinner) removeHighlight(spinner_category_spinner);
         if (currentView != spinner_service_spinner) removeHighlight(spinner_service_spinner);
+
     }
 }

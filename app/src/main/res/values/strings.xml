@@ -59,6 +59,8 @@
     <string name="photo2_reg">Файл не выбран</string>
     <string name="accept_reg"> Я подтверждаю, что я молодец и ответственно подошел к заполнению своей анкеты и заполнил все поля!</string>
     <string name="singin_reg">Разместить вашу рекламу</string>
+    <string name="name_reg_text">Имя (или название салона,фирмы):</string>
+    <string name="enter_name">Введите ваше Имя и желательно Фамилию</string>
 
 
     <string-array name="afocus_thief_items">
